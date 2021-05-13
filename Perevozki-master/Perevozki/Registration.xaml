@@ -1,0 +1,34 @@
+﻿<Window x:Class="Perevozki.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Perevozki"
+        mc:Ignorable="d"
+        Title="Регистрация пользователя." Height="500" Width="500"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Green">
+    <Grid>
+        <Button x:Name="Ok" Content="Зарегистрироваться" HorizontalAlignment="Right" Margin="0,404,25,0" VerticalAlignment="Top" Width="126" Height="40" Click="Ok_Click" />
+
+        <Label Background="White" Content="Фамилия:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="97"/>
+        <Label Background="White" Content="Имя:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="97"/>
+        <Label Background="White" Content="Очество:" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="97"/>
+        <Label Background="White" Content="Дата рождения:" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top"/>
+        <Label Background="White" Content="Телефон:" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label Background="White" Content="e-mail:" HorizontalAlignment="Left" Margin="10,254,0,0" VerticalAlignment="Top" Width="97"/>
+        <Label Background="White" Content="Пароль:" HorizontalAlignment="Left" Margin="10,304,0,0" VerticalAlignment="Top" Width="97" />
+
+        <TextBox HorizontalAlignment="Left" x:Name="Familiya" Height="23" Margin="187,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"  />
+        <TextBox HorizontalAlignment="Left" x:Name="Data" Height="23" Margin="187,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"  />
+        <TextBox HorizontalAlignment="Left" x:Name="Tel" Height="23" Margin="187,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"  />
+        <TextBox HorizontalAlignment="Left" x:Name="Mail" Height="23" Margin="187,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"  />
+        <TextBox HorizontalAlignment="Left" x:Name="Imya" Height="23" Margin="187,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"  />
+        <TextBox HorizontalAlignment="Left" x:Name="Ochestvo" Height="23" Margin="187,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"  />
+        <TextBox HorizontalAlignment="Left" x:Name="Parol" Height="23" Margin="187,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282"  />
+
+        <Button x:Name="Nazad" Content="Назад" Width="75" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,404,0,0"  Height="40" Click="Nazad_Click"   />
+
+    </Grid>
+</Window>

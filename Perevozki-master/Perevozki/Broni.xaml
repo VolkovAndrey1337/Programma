@@ -1,0 +1,23 @@
+﻿<Window x:Class="Perevozki.Broni"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Perevozki"
+        mc:Ignorable="d"
+        Title="Бронирования." Height="650" Width="750"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Green">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" x:Name="Spisok" Height="524" Margin="10,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="724" />
+        <Button x:Name="button1" Content="Удалить бронирование по id" HorizontalAlignment="Left" Margin="534,591,0,0" VerticalAlignment="Top" Width="200" Click="button1_Click"/>
+        <Button x:Name="Vihod" Content="Назад" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,591,0,0"  Click="Button_Click" Height="20"   />
+        <Button x:Name="Obnova" Content="Обновить список" HorizontalAlignment="Right" Margin="0,5,10,0" VerticalAlignment="Top" Width="172" Click="Obnova_Click"/>
+        <Button x:Name="Poisk" Content="Поиск по дате" HorizontalAlignment="Right" Margin="0,5,497,0" VerticalAlignment="Top" Width="110" Click="Poisk_Click"/>
+        <TextBox HorizontalAlignment="Left" x:Name="Id" Height="20" Margin="388,591,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" />
+        <Label x:Name="Polz"  Background="Black" Content="" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="724" />
+        <DatePicker x:Name="Data" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,3,624,592" Width="100" Height="26" />
+
+    </Grid>
+</Window>
